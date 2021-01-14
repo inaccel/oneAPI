@@ -1,21 +1,21 @@
 # Logistic Regression IP core
 
-|   | One-api Stratix10 | One-api Arria10 | Opencl Arria10 |
-| --- | --- | --- | --- |
-| Num Engines/Kernels | 2 | 2 | 2 |
-| Acceleration (compared to CPU only execution for 100 iterations) | 13.13x | 41.59x | 42.82x |
-| ALUTs | 530547 | 240444 | 200474 |
-| Registers | 1,673,644 | 560692 | 460165 |
-| Logic Utilization | 70% | 61% | 51% |
-| I/O pins | 72% | 38% | 38% |
-| DSP blocks | 15% | 57% | 70% |
-| Memory bits | 33% | 24% | 22% |
-| RAM blocks | 41% | 45% | 35% |
-| Actual clock freq | 261 | 192 | 171 |
-| Kernel fmax | 261 | 192 | 171.7 |
-| 1x clock fmax | 261 | 192 | 239.69 |
-| 2x clock fmax | 522 | 384 | 343.4 |
-| Highest non-global fanout | 307368 | 335372 | 252406 |
+|   | One-api Stratix10 | Opencl Stratix10 | One-api Arria10 | Opencl Arria10 |
+| --- | --- | --- | --- | --- |
+| Num Engines/Kernels | 2 | 4 | 2 | 2 |
+| Acceleration (compared to CPU only execution for 100 iterations) | 13.13x | 132.5x | 41.59x | 42.82x |
+| ALUTs | 530547 | 612648 | 240444 | 200474 |
+| Registers | 1,673,644 | 1,552,556 | 560692 | 460165 |
+| Logic Utilization | 655,894 / 933,120 (70%) | 65% | 261,905 / 427,200 (61%) | 51% |
+| I/O pins | 653 / 912 (72%) | 72% | 310 / 826 (38%) | 38% |
+| DSP blocks | 868 / 5,760 (15%) | 39% | 868 / 1,518 (57%) | 70% |
+| Memory bits | 79,158,488 / 240,046,080 (33%) | 27% | 13,197,288 / 55,562,240 (24%) | 22% |
+| RAM blocks | 4,795 / 11,721 (41%) | 53% | 1,221 / 2,713 (45%) | 35% |
+| Actual clock freq | 261 | 220 | 192 | 171 |
+| Kernel fmax | 261 | 220.07 | 192 | 171.7 |
+| 1x clock fmax | 261 | 220.07 | 192 | 239.69 |
+| 2x clock fmax | 522 | 10000 | 384 | 343.4 |
+| Highest non-global fanout | 307368 | 12321 | 335372 | 252406 |
 
 ## Supported Platforms
 
