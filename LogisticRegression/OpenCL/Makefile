@@ -19,6 +19,9 @@ HOST_OBJECTS := $(HOST_SRCS:.cpp=.o)
 HOST_CFLAGS = $(shell aocl compile-config)
 HOST_LFLAGS = $(shell aocl link-config)
 
+all:
+	make _TEST_="-D _TEST_" host
+
 host: ${HOST_EXE}
 
 aocx:
